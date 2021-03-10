@@ -17,6 +17,7 @@ def index(request):
 
 		data = { 
 			"country_code": str(list_of_data['sys']['country']), 
+            "City_name": city ,
 			"coordinate": 'Long. '+str(list_of_data['coord']['lon']) + '  '
 						+ 'Lati. '+str(list_of_data['coord']['lat']), 
 			"temp": str(list_of_data['main']['temp']) + ' K', 
